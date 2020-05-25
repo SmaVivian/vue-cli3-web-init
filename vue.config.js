@@ -40,7 +40,9 @@ module.exports = {
           @import "@/assets/css/mixin.scss";
         `
       }
-    }
+    },
+    // 开启 CSS source maps?
+    sourceMap: true
   },
   devServer: {
     port: 8080,
@@ -53,6 +55,8 @@ module.exports = {
       }
     }
   },
+  // 生产环境是否生成 sourceMap 文件
+  // productionSourceMap: true,
 
   lintOnSave: undefined
 }
